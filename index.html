@@ -1,92 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Toolset</title>
-  <style>
-    /* Simple Dark Theme */
-    body {
-      background-color: #121212;
-      color: #ffffff;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 1rem;
-    }
-    a, a:visited {
-      color: #64b5f6;
-      text-decoration: none;
-    }
-    a:hover {
-      color: #bbdefb;
-    }
-    h1, h2, h3 {
-      margin-top: 1rem;
-      margin-bottom: 0.5rem;
-    }
-    ul {
-      list-style: none;
-      padding-left: 0;
-      margin: 0;
-    }
-    li {
-      margin: 1rem 0;
-      background-color: #1e1e1e;
-      border-radius: 4px;
-      padding: 1rem;
-    }
-    pre, code {
-      background-color: #252526;
-      color: #c8c8c8;
-      padding: 0.5rem;
-      border-radius: 4px;
-      display: block;
-      margin: 0.5rem 0;
-    }
-    .script-title {
-      font-weight: bold;
-      font-size: 1.1rem;
-      margin-bottom: 0.2rem;
-    }
-    .script-link {
-      margin-bottom: 0.5rem;
-      display: inline-block;
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Toolset</title>
+    <style>
+        /* Simple Dark Theme */
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 1rem;
+        }
+
+        a,
+        a:visited {
+            color: #64b5f6;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #bbdefb;
+        }
+
+        h1,
+        h2,
+        h3 {
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+        }
+
+        li {
+            margin: 1rem 0;
+            background-color: #1e1e1e;
+            border-radius: 4px;
+            padding: 1rem;
+        }
+
+        pre,
+        code {
+            background-color: #252526;
+            color: #c8c8c8;
+            padding: 0.5rem;
+            border-radius: 4px;
+            display: block;
+            margin: 0.5rem 0;
+        }
+
+        .script-title {
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .script-link {
+            margin-bottom: 0.5rem;
+            display: inline-block;
+        }
+    </style>
 </head>
+
 <body>
-  <h1>My Toolset</h1>
-  <p>Welcome! Below are various server scripts with copy-and-paste ready commands.</p>
-  
-  <h2>Server Tools</h2>
-  <ul>
-    <!-- jupyter_setup.sh -->
-    <li>
-      <div class="script-title">Jupyter Setup</div>
-      <a class="script-link" href="/Toolset/tools/server/jupyter_setup.sh">
-        /Toolset/tools/server/jupyter_setup.sh
-      </a>
-      <p>Install Jupyter on a fresh server. Lets you start and stop it on demand.</p>
-      <pre>curl -sSfLO https://seriouspassenger.github.io/Toolset/tools/server/jupyter_setup.sh
+    <h1>My Toolset</h1>
+    <p>Welcome! Below are various server scripts with copy-and-paste ready commands.</p>
+
+    <h2>Server Tools</h2>
+    <ul>
+        <!-- jupyter_setup.sh -->
+        <li>
+            <div class="script-title">Jupyter Setup</div>
+            <a class="script-link" href="/Toolset/tools/server/jupyter_setup.sh">
+                /Toolset/tools/server/jupyter_setup.sh
+            </a>
+            <p>Install Jupyter on a fresh server. Lets you start and stop it on demand.</p>
+            <pre>curl -sSfLO https://seriouspassenger.github.io/Toolset/tools/server/jupyter_setup.sh
 chmod +x jupyter_setup.sh
 ./jupyter_setup.sh</pre>
-    </li>
+        </li>
 
-   <h2>Language Modeling</h2>
-   <ul></ul>
-    <li>
-      <div class="script-title">
-        Train SentencePiece Model
-      </div>
-      <a class="script-link" href="/Toolset/tools/lm/train_sentencepiece.sh">
-        /Toolset/tools/lm/train_sentencepiece.sh
-      </a>
-      <p>Train a SentencePiece model from a text file.</p>
-      <pre>curl -sSfLO https://seriouspassenger.github.io/Toolset/tools/lm/train_sentencepiece.sh
+        <h2>Language Modeling</h2>
+        <ul></ul>
+        <li>
+            <div class="script-title">
+                Train SentencePiece Model
+            </div>
+            <a class="script-link" href="/Toolset/tools/lm/train_sentencepiece.sh">
+                /Toolset/tools/lm/train_sentencepiece.sh
+            </a>
+            <p>Train a SentencePiece model from a text file.</p>
+            <pre>curl -sSfLO https://seriouspassenger.github.io/Toolset/tools/lm/train_sentencepiece.sh
 chmod +x train_sentencepiece.sh
 ./train_sentencepiece.sh --help</pre>
-    </li>
-   </ul>
-  </ul>
+        </li>
+    </ul>
+    </ul>
 </body>
+
 </html>
